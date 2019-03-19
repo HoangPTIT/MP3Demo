@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hdev.mp3.activity.PlayMusicActivity">
+
+    <ImageButton
+        android:id="@+id/image_back"
+        android:layout_width="@dimen/height48dp"
+        android:layout_height="@dimen/height48dp"
+        android:layout_marginBottom="@dimen/margin8dp"
+        android:layout_marginLeft="@dimen/margin8dp"
+        android:layout_marginStart="@dimen/margin8dp"
+        android:layout_marginTop="@dimen/margin8dp"
+        android:background="@drawable/foward"
+        android:contentDescription="@string/button_back"
+        app:layout_constraintBottom_toBottomOf="@+id/text_singer_play"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_song_play" />
+
+    <TextView
+        android:id="@+id/text_song_play"
+        style="@style/song"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height40dp"
+        android:layout_marginLeft="@dimen/margin8dp"
+        android:layout_marginStart="@dimen/margin8dp"
+        android:layout_marginTop="@dimen/margin8dp"
+        android:gravity="center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_back"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_singer_play"
+        style="@style/singer"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height30dp"
+        android:layout_marginLeft="@dimen/margin8dp"
+        android:layout_marginStart="@dimen/margin8dp"
+        android:layout_marginTop="@dimen/margin8dp"
+        android:gravity="center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_back"
+        app:layout_constraintTop_toBottomOf="@+id/text_song_play" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_play"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/margin8dp"
+        android:layout_marginRight="@dimen/margin8dp"
+        android:layout_marginTop="@dimen/margin32dp"
+        android:background="@drawable/thangdien"
+        android:contentDescription="@string/picture_play"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_singer_play" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height20dp"
+        android:layout_marginLeft="@dimen/margin8dp"
+        android:layout_marginRight="@dimen/margin8dp"
+        android:layout_marginTop="@dimen/margin64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_play" />
+
+    <ImageButton
+        android:id="@+id/image_random"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height48dp"
+        android:layout_marginBottom="@dimen/margin8dp"
+        android:background="@drawable/random"
+        android:contentDescription="@string/random_song"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toStartOf="@+id/image_back_song"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/image_back_song"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height48dp"
+        android:layout_marginBottom="@dimen/margin8dp"
+        android:background="@drawable/back_song"
+        android:contentDescription="@string/back_song"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toStartOf="@+id/image_play_song"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/image_random" />
+
+    <ImageButton
+        android:id="@+id/image_next_song"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height48dp"
+        android:layout_marginBottom="@dimen/margin8dp"
+        android:background="@drawable/next_song"
+        android:contentDescription="@string/next_song"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toStartOf="@+id/image_repeat"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/image_play_song" />
+
+    <ImageButton
+        android:id="@+id/image_play_song"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height48dp"
+        android:layout_marginBottom="@dimen/margin8dp"
+        android:background="@drawable/play"
+        android:contentDescription="@string/play_song"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toStartOf="@+id/image_next_song"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/image_back_song" />
+
+    <ImageButton
+        android:id="@+id/image_repeat"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height48dp"
+        android:layout_marginBottom="@dimen/margin8dp"
+        android:background="@drawable/repeat"
+        android:contentDescription="@string/repeat_song"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/image_next_song" />
+</android.support.constraint.ConstraintLayout>
