@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Song Player</string>
+
+    <!--PlayMusic-->
+    <string name="button_back">back</string>
+    <string name="picture_play">picture_play</string>
+    <string name="random_song">random_song</string>
+    <string name="back_song">back_song</string>
+    <string name="play_song">play_song</string>
+    <string name="next_song">next_song</string>
+    <string name="repeat_song">repeat_song</string>
+    <string name="queryHint">Tìm bài hát</string>
+
+    <!--Service-->
+    <string name="channel_name">channel_name</string>
+    <string name="channel_description">channel_description</string>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--MainActivity-->
+    <dimen name="height48dp">48dp</dimen>
+    <dimen name="height40dp">30dp</dimen>
+    <dimen name="height30dp">20dp</dimen>
+    <dimen name="height450dp">450dp</dimen>
+    <dimen name="height20dp">20dp</dimen>
+    <dimen name="margin8dp">8dp</dimen>
+    <dimen name="margin32dp">32dp</dimen>
+    <dimen name="margin64dp">64dp</dimen>
+    <dimen name="size100dp">100dp</dimen>
+
+    <!--CardView-->
+    <dimen name="elevation">8dp</dimen>
+    <dimen name="cornerRadius">8dp</dimen>
+
+    <!--Fragment-->
+    <dimen name="height80dp">30dp</dimen>
+    <dimen name="height50dp">30dp</dimen>
+    <dimen name="height70dp">70dp</dimen>
+</resources>
